@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pictopia</title>
+  <link rel="stylesheet" href="style2.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Pictopia</h1>
+
+    <nav>
+      <a href="#" id="search-link">Search</a> |
+      <a href="#" id="favorites-link">Favorites</a> |
+      <span id="auth-links">
+        <a href="login.html">Login</a> |
+        <a href="register.html">Register</a>
+      </span>
+      <a href="#" id="logout-link">Logout</a>
+    </nav>
+
+    <div id="search-section">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search for images..." />
+        <button id="search-button" type="submit">Search</button>
+      </form>
+
+      <div id="search-results" class="search-results"></div>
+      <button id="show-more-button">Show more</button>
+    </div>
+
+    <div id="favorites-section" style="display: none;">
+      <h2 style="text-align:center; color:#0277bd;">Your Favorite Images</h2>
+      <div id="favorites-list" class="search-results"></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
